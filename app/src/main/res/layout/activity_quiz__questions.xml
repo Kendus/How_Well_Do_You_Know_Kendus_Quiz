@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            //Title
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text=" How Well Do You Know Kendus?"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            //Short Answer
+
+            <TextView
+                android:id="@+id/q1"
+                android:layout_below="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="1.  What is Kendus' middle name?"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+            //True or false checkbox
+
+
+            <TextView
+                android:id="@+id/q2"
+                android:layout_below="@+id/q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="2.  Kendus enjoys dark/gloomy/stormy weather."
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <CheckBox
+                        android:id="@+id/boxTrue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="True"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:paddingRight="8dp"
+                        />
+                    <CheckBox
+                        android:id="@+id/boxFalse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="False"
+                        android:textColor="#000000"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+
+            //4 button multiple choice (oldest, youngest, or middle)
+
+
+            <TextView
+                android:id="@+id/q3"
+                android:layout_below="@+id/q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="3.  Kendus' position in his sibling hierarchy is... ."
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <Button
+                        android:id="@+id/q3b1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Oldest"/>
+
+                    <Button
+                        android:id="@+id/q3b2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="youngest"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <Button
+                        android:id="@+id/q3b3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="middle"/>
+
+                    <Button
+                        android:id="@+id/q3b4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Only"/>
+
+                </LinearLayout>
+
+
+
+            //4 button multiple choice (date of Birth)
+
+
+            <TextView
+                android:id="@+id/q4"
+                android:layout_below="@+id/q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="4.  What holiday was Kendus born on?"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/q4b1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Jan 1st"/>
+
+                <Button
+                    android:id="@+id/q4b2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="May 5th"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/q4b3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="july 4th"/>
+
+                <Button
+                    android:id="@+id/q4b4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dec 25th"/>
+
+            </LinearLayout>
+
+
+
+            //rating
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
